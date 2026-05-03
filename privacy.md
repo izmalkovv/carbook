@@ -348,9 +348,11 @@ We may update this Privacy Notice from time to time. The updated version will be
 If you have questions or comments about this notice, you may email us at artizmalkov@icloud.com or contact us by post at:
 
 Artem Izmalkov
-Oleksandra Myshugy st 10
-Kyiv 02141
+Hvardiitsiv-shironintsiv st. 23
+Kharkiv 61153
 Ukraine
+
+
 
 
 ## 17. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
