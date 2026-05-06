@@ -5,8 +5,7 @@
 This Privacy Notice for Artem Izmalkov (doing business as CarBook) ("**we**," "**us**," or "**our**"), describes how and why we might access, collect, store, use, and/or share ("**process**") your personal information when you use our services ("**Services**"), including when you:
 
 - Download and use our mobile application (CarBook: Car Maintenance Log), or any other application of ours that links to this Privacy Notice
-- Use CarBook: Car Maintenance Log. CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini and OpenAI APIs to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history. Users authenticate via Google Sign-In or Apple Sign-In through Firebase Authentication. Vehicle data, service records, and user preferences are stored in Google Firebase (Firestore and Firebase Storage) and synced across devices. The app sends local push notifications for maintenance reminders. CarBook offers both free and premium subscription tiers.
-- Engage with us in other related ways, including any marketing or events
+- Use CarBook: Car Maintenance Log. CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini API to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history. Users authenticate via Google Sign-In or Apple Sign-In through Firebase Authentication. Vehicle data, service records, and user preferences are stored in Google Firebase (Firestore and Firebase Storage) and synced across devices. The app sends local push notifications for maintenance reminders. CarBook offers both free and premium subscription tiers.
 
 **Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at artizmalkov@icloud.com.
 
@@ -73,11 +72,11 @@ We collect personal information that you voluntarily provide to us when you regi
 
 All payments are processed exclusively through Apple's App Store In-App Purchase system. We do not collect, store, or process any payment card or billing information directly.
 
-**Social Media Login Data.** We may provide you with the option to register with us using your existing social media account details, like your Facebook, X, or other social media account. If you choose to register in this way, we will collect certain profile information about you from the social media provider, as described in the section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS?" below.
+**Social Sign-In Data.** We provide the option to register with us using your Google or Apple account. If you choose to register in this way, we will collect certain profile information (name, email, and profile picture where available), as described in the section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS?" below.
 
 **Application Data.** If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
 
-- *Mobile Device Access.* We may request access or permission to certain features from your mobile device, including your mobile device's camera, reminders, and other features. If you wish to change our access or permissions, you may do so in your device's settings.
+- *Mobile Device Access.* We may request access or permission to your mobile device's camera (to attach photos of service receipts to records) and to send you push notifications. You can change these permissions in your device's settings at any time. If you wish to change our access or permissions, you may do so in your device's settings.
 - *Mobile Device Data.* We automatically collect device information (such as your mobile device ID, model, and manufacturer), operating system, version information and system configuration information, device and application identification numbers, browser type and version, hardware model Internet service provider and/or mobile carrier, and Internet Protocol (IP) address (or proxy server). If you are using our application(s), we may also collect information about the phone network associated with your mobile device, your mobile device's operating system or platform, the type of mobile device you use, your mobile device's unique device ID, and information about the features of our application(s) you accessed.
 - *Push Notifications.* We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.
 
@@ -95,20 +94,11 @@ The information we collect includes:
 
 - *Log and Usage Data.* Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings).
 - *Device Data.* We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
-- *Location Data.* We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.
-- *Vehicle, service, and fuel data.* Information about user's vehicles (make, model, year, mileage, VIN, license plate, fuel type), service and fuel expense records (dates, costs, work performed, fuel volume, gas station), photos of receipts processed via third-party AI services (Google Gemini, OpenAI), and usage analytics collected via Mixpanel.
+- *Vehicle, service, and fuel data.* Information about your vehicles (make, model, year, mileage, VIN, license plate, fuel type), service and fuel expense records (dates, costs, work performed, fuel volume, fuel station), photos of receipts processed via Google Gemini AI for automated data extraction, and usage analytics collected via Mixpanel.
 
 ### Google API
 
 Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#limited-use).
-
-### Information collected from other sources
-
-***In Short:** We may collect limited data from public databases, marketing partners, social media platforms, and other outside sources.*
-
-In order to enhance our ability to provide relevant marketing, offers, and services to you and update our records, we may obtain information about you from other sources, such as public databases, joint marketing partners, affiliate programs, data providers, social media platforms, and from other third parties.
-
-If you interact with us on a social media platform using your social media account (e.g., Facebook or X), we receive personal information about you from such platforms such as your name, email address, and gender. Any personal information that we collect from your social media account depends on your social media account's privacy settings.
 
 
 ## 2. HOW DO WE PROCESS YOUR INFORMATION?
@@ -172,13 +162,12 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 
 The third parties we may share personal information with are as follows:
 
-- **AI Service Providers:** OpenAI and Google Cloud AI
+- **AI Service Providers:** Google Cloud AI (Gemini)
 - **Allow Users to Connect to Their Third-Party Accounts:** Google account and Apple Sign-In
 - **Cloud Computing Services:** Google Cloud Platform
 - **Functionality and Infrastructure Optimization:** Cloud Firestore, Cloud Functions for Firebase, and Cloud Storage for Firebase
 - **User Account Registration and Authentication:** Google Sign-In and Apple Sign-In
 - **Web and Mobile Analytics:** MixPanel
-- **Website Testing:** TestFlight
 - **Push Notifications:** Firebase Cloud Messaging
 
 We also may need to share your personal information in the following situations:
@@ -194,7 +183,7 @@ As part of our Services, we offer products, features, or tools powered by artifi
 
 ### Use of AI Technologies
 
-We provide the AI Products through third-party service providers ("AI Service Providers"), including OpenAI and Google Cloud AI. As outlined in this Privacy Notice, your input, output, and personal information will be shared with and processed by these AI Service Providers to enable your use of our AI Products for purposes outlined in "WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?" You must not use the AI Products in any way that violates the terms or policies of any AI Service Provider.
+We provide the AI Products through a third-party service provider, Google Cloud AI (Gemini). As outlined in this Privacy Notice, your input, output, and personal information will be shared with and processed by these AI Service Providers to enable your use of our AI Products for purposes outlined in "WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?" You must not use the AI Products in any way that violates the terms or policies of any AI Service Provider.
 
 ### Our AI Products
 
@@ -223,7 +212,7 @@ We believe in giving you the power to decide how your data is used. To opt out, 
 
 ***In Short:** If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.*
 
-Our Services offer you the ability to register and log in using your third-party social media account details (like your Facebook or X logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address, friends list, and profile picture, as well as other information you choose to make public on such a social media platform.
+Our Services offer you the ability to register and log in using your Google account or Apple ID. Where you choose to do this, we will receive certain profile information from these providers. The profile information we receive includes your name and email address, and a profile picture when available (Google). We do not receive any additional information from these accounts.
 
 We will use the information we receive only for the purposes that are described in this Privacy Notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.
 
@@ -333,7 +322,7 @@ Under certain US state data protection laws, if we decline to take action regard
 
 ## 14. ARTIFICIAL INTELLIGENCE (AI) DATA PROCESSING
 
-CarBook uses third-party AI services (Google Gemini and OpenAI) to process photos of service receipts for data extraction (OCR) and to generate smart maintenance recommendations based on your vehicle's service history. When you use these features, relevant data (receipt images, service history) is sent to these AI providers for processing. These AI features are optional, and the app is fully functional without them. AI-generated recommendations are for informational purposes only and should not be considered professional automotive advice.
+CarBook uses Google Gemini AI to process photos of service receipts for data extraction (OCR) and to generate smart maintenance recommendations based on your vehicle's service history. When you use these features, relevant data (receipt images, service history) is sent to Google for processing. These AI features are optional, and the app is fully functional without them. AI-generated recommendations are for informational purposes only and should not be considered professional automotive advice.
 
 
 ## 15. DO WE MAKE UPDATES TO THIS NOTICE?
