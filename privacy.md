@@ -18,7 +18,7 @@ This Privacy Notice for Artem Izmalkov (doing business as CarBook) ("**we**," "*
 
 **Do we process any sensitive personal information?** We do not process sensitive personal information.
 
-**Do we collect any information from third parties?** We may collect information from public databases, marketing partners, social media platforms, and other outside sources.
+**Do we collect any information from third parties?** No. We only collect information directly from you when you use the Services.
 
 **How do we process your information?** We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so.
 
