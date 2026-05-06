@@ -9,7 +9,7 @@ We are Artem Izmalkov ("Company," "we," "us," "our"), doing business as CarBook.
 
 We operate the mobile application CarBook: Car Maintenance Log, as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
 
-CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini and OpenAI APIs to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history.
+CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini API to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history.
 
 You can contact us by email at artizmalkov@icloud.com or by mail to Hvardiitsiv-shironintsiv st. 23, Kharkiv 61153, Ukraine. 
 
@@ -30,18 +30,19 @@ We recommend that you print a copy of these Legal Terms for your records.
 6. CONTRIBUTION LICENSE
 7. SERVICES MANAGEMENT
 8. TERM AND TERMINATION
-9. MODIFICATIONS AND INTERRUPTIONS
-10. GOVERNING LAW
-11. DISPUTE RESOLUTION
-12. CORRECTIONS
-13. DISCLAIMER
-14. LIMITATIONS OF LIABILITY
-15. INDEMNIFICATION
-16. USER DATA
-17. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
-18. AI-GENERATED CONTENT DISCLAIMER
-19. MISCELLANEOUS
-20. CONTACT US
+9. SUBSCRIPTIONS
+10. MODIFICATIONS AND INTERRUPTIONS
+11. GOVERNING LAW
+12. DISPUTE RESOLUTION
+13. CORRECTIONS
+14. DISCLAIMER
+15. LIMITATIONS OF LIABILITY
+16. INDEMNIFICATION
+17. USER DATA
+18. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
+19. AI-GENERATED CONTENT DISCLAIMER
+20. MISCELLANEOUS
+21. CONTACT US
 
 
 ## 1. OUR SERVICES
@@ -157,20 +158,43 @@ These Legal Terms shall remain in full force and effect while you use the Servic
 
 If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
 
+## 9. SUBSCRIPTIONS
+CarBook offers an optional auto-renewable subscription called "CarBook Plus", which unlocks premium features including unlimited vehicles, unlimited receipt scans, AI-generated maintenance suggestions, and PDF history export.
+Subscription Options
+- CarBook Plus Monthly: billed monthly
+- CarBook Plus Yearly: billed annually, with a 3-day free trial for first-time subscribers
+Current pricing is displayed inside the Services and on the App Store product page. Prices may vary by region and currency.
+Billing
+All subscription purchases are processed through your Apple ID and the Apple App Store In-App Purchase system. We do not collect or store any payment information.
+Auto-Renewal
+Your subscription renews automatically at the end of each billing period (monthly or yearly) at the then-current price, unless you cancel at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period.
+Free Trial
+If you start a free trial for the yearly plan, you will not be charged during the trial. You can cancel any time before the trial ends to avoid being charged. If you do not cancel, your subscription will automatically convert to a paid annual subscription at the end of the trial.
+Managing or Cancelling Your Subscription
+You can manage or cancel your subscription at any time through your iOS device:
+1. Open the iOS Settings app
+2. Tap your Apple ID at the top
+3. Tap Subscriptions
+4. Select CarBook Plus and tap Cancel Subscription
+Cancellation takes effect at the end of the current billing period. You will continue to have access to premium features until that date.
+Refunds
+All purchases are final, and we do not provide refunds. Refund requests for the unused portion of a subscription must be directed to Apple Support, in accordance with Apple's refund policy. We have no ability to issue refunds for App Store purchases.
+Changes to Subscription Pricing
+We reserve the right to change subscription pricing at any time. If we change the price of a subscription you currently hold, we will notify you and ask for your consent before the change takes effect, in accordance with App Store policies.
 
-## 9. MODIFICATIONS AND INTERRUPTIONS
+## 10. MODIFICATIONS AND INTERRUPTIONS
 
 We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.
 
 We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith.
 
 
-## 10. GOVERNING LAW
+## 11. GOVERNING LAW
 
 These Legal Terms shall be governed by and defined following the laws of Ukraine. Artem Izmalkov and yourself irrevocably consent that the courts of Ukraine shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.
 
 
-## 11. DISPUTE RESOLUTION
+## 12. DISPUTE RESOLUTION
 
 ### Informal Negotiations
 
@@ -189,47 +213,47 @@ The Parties agree that any arbitration shall be limited to the Dispute between t
 The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
 
 
-## 12. CORRECTIONS
+## 13. CORRECTIONS
 
 There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.
 
 
-## 13. DISCLAIMER
+## 14. DISCLAIMER
 
 THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
 
 
-## 14. LIMITATIONS OF LIABILITY
+## 15. LIMITATIONS OF LIABILITY
 
 IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING. CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
 
 
-## 15. INDEMNIFICATION
+## 16. INDEMNIFICATION
 
 You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys' fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.
 
 
-## 16. USER DATA
+## 17. USER DATA
 
 We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
 
 
-## 17. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
+## 18. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
 
 Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.
 
 
-## 18. AI-GENERATED CONTENT DISCLAIMER
+## 19. AI-GENERATED CONTENT DISCLAIMER
 
-CarBook uses third-party artificial intelligence services (Google Gemini and OpenAI) to provide receipt scanning (OCR) and smart maintenance recommendations. AI-generated results, including extracted receipt data and maintenance suggestions, are provided for informational purposes only and may contain errors or inaccuracies. Users are responsible for reviewing and verifying all AI-generated data before relying on it. AI-generated maintenance recommendations should not be considered a substitute for professional automotive inspection or advice. We do not guarantee the accuracy, completeness, or reliability of any AI-generated content.
+CarBook uses the Google Gemini AI service to provide receipt scanning (OCR) and smart maintenance recommendations. AI-generated results, including extracted receipt data and maintenance suggestions, are provided for informational purposes only and may contain errors or inaccuracies. Users are responsible for reviewing and verifying all AI-generated data before relying on it. AI-generated maintenance recommendations should not be considered a substitute for professional automotive inspection or advice. We do not guarantee the accuracy, completeness, or reliability of any AI-generated content.
 
 
-## 19. MISCELLANEOUS
+## 20. MISCELLANEOUS
 
 These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms.
 
 
-## 20. CONTACT US
+## 21. CONTACT US
 
 In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
 
