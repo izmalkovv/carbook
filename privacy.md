@@ -78,7 +78,7 @@ All payments are processed exclusively through Apple's App Store In-App Purchase
 
 - *Mobile Device Access.* We may request access or permission to your mobile device's camera (to attach photos of service receipts to records) and to send you push notifications. You can change these permissions in your device's settings at any time. If you wish to change our access or permissions, you may do so in your device's settings.
 - *Mobile Device Data.* We automatically collect device information (such as your mobile device ID, model, and manufacturer), operating system, version information and system configuration information, device and application identification numbers, browser type and version, hardware model Internet service provider and/or mobile carrier, and Internet Protocol (IP) address (or proxy server). If you are using our application(s), we may also collect information about the phone network associated with your mobile device, your mobile device's operating system or platform, the type of mobile device you use, your mobile device's unique device ID, and information about the features of our application(s) you accessed.
-- *Push Notifications.* We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.
+- *Push Notifications.* When you grant notification permissions, iOS issues a Firebase Cloud Messaging (FCM) device token that we store under your account in Firestore so we can deliver server-sent notifications (for example, when a receipt scan finishes processing). Tokens are device-specific and are removed when you sign out, when you revoke notification permission in iOS Settings, or when your account is deleted.
 
 This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.
 
@@ -115,6 +115,11 @@ Our use of information received from Google APIs will adhere to [Google API Serv
 - **To protect our Services.** We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.
 - **To identify usage trends.** We may process information about how you use our Services to better understand how they are being used so we can improve them.
 - **To save or protect an individual's vital interest.** We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.
+- **To send maintenance reminders and helpful prompts.** We send local push notifications scheduled on your device for upcoming reminders, service anniversaries, seasonal maintenance windows, "add your first
+ car" nudges (24 hours, 7 days, 30 days, and 90 days after sign-up if no vehicle is added), and overdue-maintenance alerts. These run on your device's clock; opting out of notifications in iOS Settings or in the app's Settings → Notifications screen disables them.
+- **To detect vehicle health changes in the background.** When your iOS device wakes our app via BGAppRefreshTask, we compute whether any reminder transitioned to "overdue" or "due soon" and, if so, fire a local notification. No data leaves the device for this check.
+- **To generate AI-assisted suggestions.** When you have at least two service records on a vehicle, we send a summary of your vehicle and its service history to Google's Vertex AI (Gemini) to receive maintenance suggestions. Free-tier accounts trigger this no more than once per 60 days; paid subscribers trigger it more frequently in response to events such as a service record being added or a reminder being completed. Photos of receipts that you choose to scan are also sent to Vertex AI for OCR text extraction. Per Google's Vertex AI terms, your data is not used to train their models.
+
 
 
 ## 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
@@ -234,9 +239,23 @@ We have implemented measures to protect your personal information, including by 
 
 ***In Short:** We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.*
 
-We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than the period of time in which users have an account with us.
+We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).
 
-When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+**Active accounts.** While your account is active, we retain your vehicle records, service history, attached photos, mileage logs, reminders, AI suggestions, and account preferences in Google Firestore and Firebase Storage indefinitely so the app remains usable across devices and reinstalls.
+
+**Account deletion.** When you delete your account through Settings → Delete account, the app:
+1. Deletes your local data on the device.
+2. Removes your Firebase Authentication user record.
+3. Triggers a server-side cascading wipe (a Firebase Cloud Function named `onUserDeleted`) that recursively removes:
+   - your user document and all nested vehicle / service-record /
+     reminder / suggestion / attachment subcollections;
+   - your subscription record;
+   - any per-account rate-limit records;
+   - any transient documents (pending receipt scans, car-image
+     requests) keyed to your account;
+   - your scan-image blobs in Firebase Storage.
+
+**Backups.** Firestore data is automatically backed up to Google Cloud Storage on a weekly schedule. Backups are retained for 30 days under a lifecycle rule, after which they are permanently deleted by Google Cloud. Your data may therefore persist in encrypted backups for up to 30 days following account deletion before it is fully purged.
 
 
 ## 9. HOW DO WE KEEP YOUR INFORMATION SAFE?
@@ -342,12 +361,18 @@ Kharkiv 61153
 Ukraine
 
 
-
-
 ## 17. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
-Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please fill out and submit a data subject access request.
+Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information.
 
----
+**To delete your account and personal data:**
+Open the app → Settings → tap "Delete account" → confirm. The deletion runs in two stages:
 
-*This Privacy Policy was created using Termly's Privacy Policy Generator.*
+1. Immediate: your authentication is revoked and your local data on the device is wiped. You are signed out and returned to the login screen.
+2. Server-side (within seconds): a Cloud Function automatically removes all of your data from Firestore, Firebase Storage, and subscription records.
+
+You may also request deletion by emailing us at **artizmalkov@icloud.com** with the email address associated with your account.
+
+**Backup retention.** As described in "How long do we keep your information," your data may persist in encrypted Cloud Storage backups for up to 30 days after deletion before it is automatically purged.
+
+
