@@ -263,7 +263,3 @@ Kharkiv 61153
 Ukraine 
 
 Email: artizmalkov@icloud.com
-
----
-
-*This Terms and Conditions was created using Termly's Terms and Conditions Generator.*
