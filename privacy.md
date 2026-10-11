@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Last updated May 01, 2026**
+**Last updated October 11, 2026**
 
 This Privacy Notice for Artem Izmalkov (doing business as CarBook) ("**we**," "**us**," or "**our**"), describes how and why we might access, collect, store, use, and/or share ("**process**") your personal information when you use our services ("**Services**"), including when you:
 
@@ -72,6 +72,8 @@ We collect personal information that you voluntarily provide to us when you regi
 
 All payments are processed exclusively through Apple's App Store In-App Purchase system. We do not collect, store, or process any payment card or billing information directly.
 
+**Subscription Status.** To unlock CarBook Plus on all of your devices, we link your App Store subscription to your CarBook account. For this we store the subscription's product, status, renewal and expiration dates, and Apple's transaction identifiers (such as the original transaction ID), which we receive from the app and from Apple's App Store Server Notifications. We do not receive your Apple ID, name, or payment details from Apple.
+
 **Social Sign-In Data.** We provide the option to register with us using your Google or Apple account. If you choose to register in this way, we will collect certain profile information (name, email, and profile picture where available), as described in the section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS?" below.
 
 **Application Data.** If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
@@ -94,6 +96,7 @@ The information we collect includes:
 
 - *Log and Usage Data.* Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings).
 - *Device Data.* We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
+- *Car sharing and transfer data.* If you share a vehicle, accept a shared vehicle, or transfer or receive a vehicle, we store the invitation (its code, type, role, status, and expiration date), the list of people with access to the vehicle and their roles, the edits that editors make to a shared vehicle, and a record of completed ownership transfers (who transferred which vehicle to whom, and when).
 - *Vehicle, service, and fuel data.* Information about your vehicles (make, model, year, mileage, VIN, license plate, fuel type), service and fuel expense records (dates, costs, work performed, fuel volume, fuel station), photos of receipts processed via Google Gemini AI for automated data extraction, and usage analytics collected via Mixpanel.
 
 ### Google API
@@ -174,9 +177,11 @@ The third parties we may share personal information with are as follows:
 - **User Account Registration and Authentication:** Google Sign-In and Apple Sign-In
 - **Web and Mobile Analytics:** MixPanel
 - **Push Notifications:** Firebase Cloud Messaging
+- **Internal Operational Alerts:** Telegram (used only to send us private service alerts, such as failed receipt scans, subscription changes, and support requests, which may include your account identifier)
 
 We also may need to share your personal information in the following situations:
 
+- **Other CarBook Users You Choose to Share With.** CarBook lets you share a vehicle with other people and transfer a vehicle to a new owner. When you do this, the people you invite can see your name, email address, and profile picture (if available), and the vehicle's details, service and fuel records, reminders, maintenance plan, and attachment information. People you add as "editors" can also add, change, and delete records of that vehicle, and the owner is notified about their changes. When you accept a shared vehicle, the owner and other members can see your name, email address, and profile picture. When you transfer a vehicle, a copy of its full history (optionally without costs and notes, as you choose) moves to the new owner's account and is then controlled by them. We only share this information with people you invite; you can remove access at any time.
 - **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
 
@@ -253,7 +258,13 @@ We will only keep your personal information for as long as it is necessary for t
    - any per-account rate-limit records;
    - any transient documents (pending receipt scans, car-image
      requests) keyed to your account;
-   - your scan-image blobs in Firebase Storage.
+   - your scan-image blobs in Firebase Storage;
+   - your car sharing data: vehicles you own are unshared from everyone you invited, you are removed from vehicles other people shared with you, and your invitations and transfer records are deleted;
+   - server-side records linking your App Store subscription to your account, and pending AI suggestion jobs.
+
+**Vehicles shared with or transferred to others.** Deleting your account does not delete vehicles you have already transferred to another person, because they now belong to that person's account. Likewise, records you added or changed as an editor on someone else's vehicle remain part of that vehicle's history.
+
+**Invitations.** Sharing and transfer invitations expire 7 days after they are created and are automatically deleted after expiry.
 
 **Backups.** Firestore data is automatically backed up to Google Cloud Storage on a weekly schedule. Backups are retained for 30 days under a lifecycle rule, after which they are permanently deleted by Google Cloud. Your data may therefore persist in encrypted backups for up to 30 days following account deletion before it is fully purged.
 
@@ -369,7 +380,7 @@ Based on the applicable laws of your country, you may have the right to request 
 Open the app → Settings → tap "Delete account" → confirm. The deletion runs in two stages:
 
 1. Immediate: your authentication is revoked and your local data on the device is wiped. You are signed out and returned to the login screen.
-2. Server-side (within seconds): a Cloud Function automatically removes all of your data from Firestore, Firebase Storage, and subscription records.
+2. Server-side (within seconds): a Cloud Function automatically removes all of your data from Firestore, Firebase Storage, and subscription records, and removes your car sharing access, invitations, and transfer records. Vehicles you have already transferred to someone else stay in their account.
 
 You may also request deletion by emailing us at **artizmalkov@icloud.com** with the email address associated with your account.
 

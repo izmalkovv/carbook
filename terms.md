@@ -1,6 +1,6 @@
 # TERMS OF USE
 
-**Last updated May 01, 2026**
+**Last updated October 11, 2026**
 
 
 ## AGREEMENT TO OUR LEGAL TERMS
@@ -9,7 +9,7 @@ We are Artem Izmalkov ("Company," "we," "us," "our"), doing business as CarBook.
 
 We operate the mobile application CarBook: Car Maintenance Log, as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
 
-CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini API to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history.
+CarBook is a mobile iOS application for car maintenance tracking and management. Users can register and manage multiple vehicles, log service records (repairs, oil changes, tire replacements, scheduled maintenance), track mileage and expenses, set maintenance reminders, and view cost analytics. The app uses AI-powered features including receipt scanning (OCR) via Google Gemini API to automatically extract service data from photos of receipts, and smart maintenance suggestions based on vehicle service history. Users can also share a vehicle with other people and transfer a vehicle, together with its history, to a new owner.
 
 You can contact us by email at artizmalkov@icloud.com or by mail to Hvardiitsiv-shironintsiv st. 23, Kharkiv 61153, Ukraine. 
 
@@ -137,6 +137,16 @@ As a user of the Services, you agree not to:
 
 The Services may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions"). Contributions may be viewable by other users of the Services and through third-party websites. When you create or make available any Contributions, you thereby represent and warrant that the content is accurate, not misleading, and does not violate any applicable law or these Legal Terms.
 
+### Car Sharing and Ownership Transfer
+
+**Sharing a vehicle.** You may invite other people to a vehicle as a "viewer" (can see the vehicle and its records) or an "editor" (can also add, change, and delete records). Creating a sharing invitation requires an active CarBook Plus subscription. You are responsible for whom you invite and for sending invitation codes only to people you trust. Editors' changes are applied to your vehicle directly; you can change a person's role or remove their access at any time, but changes they already made are not automatically reverted. Invitations expire after 7 days.
+
+**Using a shared vehicle.** When you accept a shared vehicle, it remains the owner's vehicle. The owner may change your role or remove your access at any time, and if the owner deletes the vehicle or their account, your access ends and the vehicle is removed from your garage.
+
+**Transferring a vehicle.** Creating a transfer code is your final consent to the transfer: as soon as the recipient accepts it, the vehicle and its history (optionally without costs and notes, as you choose) move to the recipient's account, existing members lose access, and you may keep read-only access as a viewer. A completed transfer cannot be undone by us; to get the vehicle back, the new owner must transfer it to you. Only send a transfer code to the person who should become the new owner.
+
+**Your responsibility.** You must have the right to share any information you add to a shared or transferred vehicle, including personal information about other people. We are not responsible for how other users you invite use the information you share with them.
+
 
 ## 6. CONTRIBUTION LICENSE
 
@@ -159,7 +169,7 @@ These Legal Terms shall remain in full force and effect while you use the Servic
 If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
 
 ## 9. SUBSCRIPTIONS
-CarBook offers an optional auto-renewable subscription called "CarBook Plus", which unlocks premium features including unlimited vehicles, unlimited receipt scans, AI-generated maintenance suggestions, and PDF history export.
+CarBook offers an optional auto-renewable subscription called "CarBook Plus", which unlocks premium features including unlimited vehicles, unlimited receipt scans, smart service reminders and AI-generated maintenance suggestions, unlimited attachments, unlimited service intervals, custom car illustrations, full PDF history export, and sharing vehicles with other people. The exact set of features is shown on the subscription screen in the app and may change over time.
 Subscription Options
 - CarBook Plus Monthly: billed monthly
 - CarBook Plus Yearly: billed annually, with a 3-day free trial for first-time subscribers
